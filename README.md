@@ -3,6 +3,7 @@
 This build of Nginx on Alpine includes:
 
   * [ModSecurity v3](https://github.com/SpiderLabs/ModSecurity) using the [ModSecurity v3 Nginx Connector](https://github.com/SpiderLabs/ModSecurity-nginx) and the [OWASP Core Rule Set](https://github.com/SpiderLabs/owasp-modsecurity-crs)
+  * [header_more](https://github.com/openresty/headers-more-nginx-module.git) with [openresty](https://openresty.org)
   * [GeoIP2](https://github.com/leev/ngx_http_geoip2_module) with the [GeoLite2 databases](https://dev.maxmind.com/geoip/geoip2/geolite2)
   * a few additional general security features
 
