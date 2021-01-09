@@ -1,6 +1,6 @@
-FROM nginx:alpine as build_modsecurity
-
-ARG GEO_DB_RELEASE=2020-03
+#FROM nginx:alpine as build_modsecurity
+FROM nginx:1.19.2-alpine as build_modsecurity
+ARG GEO_DB_RELEASE=2021-01
 ENV GEO_DB_RELEASE=${GEO_DB_RELEASE}
 
 ARG MODSEC_BRANCH=v3.0.4
@@ -91,7 +91,7 @@ RUN apk del general-dependencies
 
 
 #FROM nginx:alpine
-FROM  nginx:1.17.9-alpine
+FROM  nginx:1.19.2-alpine
 
 LABEL maintainer="ivandreyv@gmail.com"
 
