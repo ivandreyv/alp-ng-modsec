@@ -3,7 +3,8 @@ FROM nginx:1.19.2-alpine as build_modsecurity
 ARG GEO_DB_RELEASE=2021-01
 ENV GEO_DB_RELEASE=${GEO_DB_RELEASE}
 
-ARG MODSEC_BRANCH=v3.0.4
+#ARG MODSEC_BRANCH=v3.0.4
+ARG MODSEC_BRANCH=v3/master
 ENV MODSEC_BRANCH=${MODSEC_BRANCH}
 
 RUN apk add --no-cache --virtual general-dependencies \
